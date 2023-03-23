@@ -7,7 +7,7 @@ import { userAuth2 } from './auth2'
 
 
 
-export const useCounterStore2 = defineStore('counter', ()=> {
+export const useCounterStore2 = defineStore('counter2', ()=> {
   const count = ref(0)
 
   const digitCount=computed(()=>
@@ -39,5 +39,9 @@ export const useCounterStore2 = defineStore('counter', ()=> {
     count,digitCount,increment,decrement,$reset
   }
     
+  },{
+    persist: {
+      enabled: true
+    }
   })
   

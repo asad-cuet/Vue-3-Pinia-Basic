@@ -7,7 +7,7 @@ const useAuth2 = userAuth2()
 
 <template>
   <main>
-      <h1>Composition api Pinia</h1>
+      <h1>Composition api Pinia with Persist</h1>
       <div v-if="useAuth2.isAuthenticated">
         <h3>Logged In</h3>
         <p>User Name={{ useAuth2.getUser }}</p>

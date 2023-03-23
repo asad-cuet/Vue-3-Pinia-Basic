@@ -27,5 +27,8 @@ export const useCounterStore = defineStore('counter', {
         return useAuth.isAuthenticated;
       }
     },
+    persist: {
+      enabled: true
+    }
   })
   

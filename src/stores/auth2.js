@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import {computed,reactive,ref} from 'vue'
 
-export const userAuth2 = defineStore('auth', () => {
+export const userAuth2 = defineStore('auth2', () => {
   const isAuthenticated = ref(false)
   const user = ref({})
 
@@ -26,4 +26,8 @@ export const userAuth2 = defineStore('auth', () => {
     isAuthenticated,user,getUser,login,logout
   }
 
+  },{
+    persist: {
+      enabled: true
+    }
   })

@@ -21,4 +21,7 @@ export const userAuth = defineStore('auth', {
         this.user={}
       }
     },
+    persist: {
+      enabled: true
+    }
   })
